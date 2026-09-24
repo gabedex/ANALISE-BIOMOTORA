@@ -1,4 +1,4 @@
-# 🎾 Analisador Biomecânico de Tênis e Volêi
+# 🎾🏐 Analisador Biomecânico de Tênis e Volêi
 
 Envie o vídeo de um golpe e o app detecta a pose do jogador (MediaPipe), desenha o esqueleto no vídeo,
 mostra a curva dos ângulos articulares e calcula a **velocidade da mão** durante o golpe.
@@ -9,8 +9,15 @@ mostra a curva dos ângulos articulares e calcula a **velocidade da mão** duran
 
 ```bash
 python -m venv .venv
+```
+
+```bash
 .venv\Scripts\activate          # Windows   (Linux/macOS: source .venv/bin/activate)
+```
+```bash
 pip install -r requirements.txt
+```
+```bash
 streamlit run app.py
 ```
 
