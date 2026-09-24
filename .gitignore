@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+*.log
+# vídeos de teste e saídas ficam fora do repositório
+data/
+*.mp4
+*.mov
+*.avi
+!tests/**

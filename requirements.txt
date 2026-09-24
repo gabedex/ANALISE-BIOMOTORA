@@ -1,0 +1,19 @@
+# Interface
+streamlit>=1.30.0
+
+# Visão computacional
+mediapipe>=0.10.30
+# Mesma variante de OpenCV que o próprio mediapipe instala.
+# NÃO instale opencv-python / opencv-python-headless junto: todos fornecem o módulo `cv2` e se sobrescrevem.
+opencv-contrib-python>=4.8.0
+
+# Dados
+numpy>=1.24.0
+pandas>=2.0.0
+
+# ffmpeg embutido (gera o vídeo H.264 que o navegador consegue tocar) (atualização do dia 19/09/2026) para o video poder ser visualizado no navegador
+imageio-ffmpeg>=0.5.0
+
+# Gráficos e Visualizações Interativas
+# Renderiza gráficos biomecânicos dinâmicos (velocidade e ângulos) com linhas de tempo e marcadores customizados (atualização do dia 22/09/2026)
+plotly>=5.18.0
