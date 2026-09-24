@@ -1,4 +1,4 @@
-# 🎾 Analisador Biomecânico de Tênis (PROJETO PARA O CURSO DE CIÊNCIAS DA COMPUTAÇÃO)
+# 🎾 Analisador Biomecânico de Tênis 
 
 Envie o vídeo de um golpe e o app detecta a pose do jogador (MediaPipe), desenha o esqueleto no vídeo,
 mostra a curva dos ângulos articulares e calcula a **velocidade da mão** durante o golpe.
