@@ -1,7 +1,9 @@
-# 🎾 Analisador Biomecânico de Tênis 
+# 🎾 Analisador Biomecânico de Tênis e Volêi
 
 Envie o vídeo de um golpe e o app detecta a pose do jogador (MediaPipe), desenha o esqueleto no vídeo,
 mostra a curva dos ângulos articulares e calcula a **velocidade da mão** durante o golpe.
+
+## Ainda está sendo atualizado para abranger os dois esportes de forma mais precisa ##
 
 ## Como rodar
 
@@ -16,9 +18,14 @@ streamlit run app.py
 > `pip uninstall -y opencv-python opencv-python-headless opencv-contrib-python` e instale de novo).
 > Essas variantes conflitam entre si.
 
+## Rodar diretamente via .bat
+> Instalar Python (3.11, 3.12 ou 3.14) (compatíveis e otimizados para o MediaPipe, Streamlit e Plotly)
+Ao instalar o Python marcar a opção "Add Python.exe to PATH"
+> Clique em "Iniciar_Analisador.bat" para fazer a verificação de arquivos dentro do projeto e iniciar a aba no localhost
+
 Ambiente em que o projeto foi desenvolvido: Python 3.14, streamlit 1.63, mediapipe 1.0.1, numpy 2.5, pandas 3.0.
 
-## Como filmar (isso importa mais que qualquer ajuste de código)
+## Como fazer as gravações
 
 - **Câmera parada**, num tripé ou apoiada. Nada de panorâmica.
 - **Corpo inteiro** do jogador em quadro durante todo o golpe.
@@ -54,7 +61,7 @@ tempo → norma → m/s e km/h. Dois métodos:
 "Golpes detectados" é uma heurística: máximos locais acima de 50% do maior pico, com no mínimo 0,6 s
 entre eles.
 
-## Limitações (leia antes de confiar num número)
+## Limitações (leia com atenção antes de confiar num número)
 
 - **É a velocidade do pulso, não da raquete nem da bola.** A cabeça da raquete costuma ser bem mais
   rápida. Use o valor para **comparar golpes/evolução** em vídeos filmados do mesmo jeito. Velocidade da
